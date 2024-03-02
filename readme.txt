@@ -1,0 +1,1 @@
+composer install and run the stripe_test.sql in the database folder.
