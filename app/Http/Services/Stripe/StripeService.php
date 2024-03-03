@@ -76,4 +76,9 @@ class StripeService
     {
         return $this->stripeRepository->getCustomerData($session);
     }
+
+    public function handleSubscription()
+    {
+        
+    }
 }

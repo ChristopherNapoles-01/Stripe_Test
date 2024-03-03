@@ -9,7 +9,7 @@ class StripeController extends Controller
 {
 
     public function __construct(
-        private StripeService $stripeService
+        private StripeService $stripeService,
     ){}
     public function store(Request $request)
     {

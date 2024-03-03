@@ -36,9 +36,6 @@ class ViewsController extends Controller
 
             $customer = $session->customer_details;
 
-            $this->stripeSessionService->updateSessionBySessionId($sessionId);
-            $this->orderService->updateOrdersBySessionId($sessionId);
-
             return view('stripe.index', [
                 'customer' => $customer
             ]);
@@ -49,5 +46,10 @@ class ViewsController extends Controller
                 'error_code' => 404
             ]);
         }        
+    }
+
+    public function cancelled(Request $request)
+    {
+        
     }
 }

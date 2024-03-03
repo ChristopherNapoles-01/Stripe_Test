@@ -49,6 +49,11 @@ class StripeRepository
         return $this->customer->retrieve($session->id);
     }
 
+    public function subscribe()
+    {
+        
+    }
+
     private function setSession(array $lineItems) : Session
     {
         $session = $this->stripeSession->create([
