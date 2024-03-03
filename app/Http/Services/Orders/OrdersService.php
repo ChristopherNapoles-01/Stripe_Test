@@ -56,7 +56,6 @@ class OrdersService
         }
         catch(\Exception $e) {
             logger()->info(json_encode($e));
-            return $isPaymentSuccessful;
         }
         
     }
